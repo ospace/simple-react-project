@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 export default function InputNumber({ className, value, onChange }) {
   const [data, setData] = useState(value || '');

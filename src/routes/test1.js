@@ -1,5 +1,5 @@
 // import DefaultLayout from 'views/layouts/Default';
-
+import React from 'react';
 import Test01 from 'views/test/Test01';
 import Test02 from 'views/test/Test02';
 import Test03 from 'views/test/Test03';

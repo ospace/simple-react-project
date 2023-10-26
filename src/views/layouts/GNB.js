@@ -1,7 +1,9 @@
+import React from 'react';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { useAuth } from 'utils/hook';
-import { emitLogout } from 'store/auth';
+// import { useAuth } from 'utils/hook';
+// import { emitLogout } from 'store/auth';
+import { eventLogout, useAuth } from 'store/auth';
 
 import './GNB.css';
 
@@ -12,7 +14,7 @@ function Logout() {
   return (
     <>
       {auth.name}&nbsp;
-      <button onClick={() => emitLogout(dispatch)}>Logout</button>
+      <button onClick={() => dispatch(eventLogout())}>Logout</button>
     </>
   );
 }
@@ -21,6 +23,9 @@ const GNB = () => {
   return (
     <div className="menu">
       <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
         <li>
           <Link to="/comp">Component</Link>
         </li>

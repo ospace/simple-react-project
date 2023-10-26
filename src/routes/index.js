@@ -7,6 +7,7 @@ import { useAuth } from 'store/auth';
 
 import Home from 'views/Home';
 import test from './test';
+import test1 from './test1';
 import Login from 'views/Login';
 import E404 from 'views/errors/404';
 
@@ -20,7 +21,7 @@ const routeData = [
   {
     path: '/',
     element: <PrivateDefault />,
-    children: [...test, { index: true, element: <Home /> }],
+    children: [...test, ...test1, { index: true, element: <Home /> }],
   },
   {
     element: <EmptyLayout />,
