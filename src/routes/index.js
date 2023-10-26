@@ -1,4 +1,5 @@
 // import { render } from 'react-dom';
+import React from 'react';
 import { useRoutes, Navigate } from 'react-router-dom';
 import DefaultLayout from 'views/layouts/Default';
 import EmptyLayout from 'views/layouts/Empty';

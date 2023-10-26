@@ -1,22 +1,16 @@
-import React from 'react';
-import Header from 'views/layouts/Header';
+import Header from './Header';
+import GNB from './GNB';
 import { Outlet } from 'react-router-dom';
 
 // https://stackoverflow.com/questions/69999324/how-do-i-render-components-with-different-layouts-elements-using-react-router-do
-// export default function Default({ children }) {
-//   return (
-//     <>
-//       <Header />
-//       <div>{children}</div>
-//     </>
-//   );
-// }
+// react
 
 export default function Default() {
   return (
     <>
       <Header />
-      <div>
+      <GNB />
+      <div style={{ padding: 10 }}>
         <Outlet />
       </div>
     </>

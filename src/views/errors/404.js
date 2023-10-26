@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function E404() {
   return (
     <main style={{ padding: '1rem' }}>
